@@ -1,0 +1,17 @@
+TODO:
+  ☐ creare repo git
+  
+LISTVIEW:
+  il componente deve prendere come **data** la lista di oggetti da istanziare, 
+  eg: 
+    [{
+      name: 'Luca',
+      age: 18
+    }, {
+      name: 'Ben',
+      age: 32
+    }]
+
+  e come figlio il template (component) degli oggetti da istanziare:
+
+    <Children></Children>

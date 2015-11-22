@@ -1,0 +1,42 @@
+{
+  "name": "sample-app",
+  "description": "Boilerplat for apps",
+  "main": "",
+  "authors": [
+    "Ben"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "flint": "~2.3.5",
+    "bitters": "~1.1.0",
+    "material-design-icons": "~2.0.0",
+    "neat": "~1.7.2"
+  }
+}

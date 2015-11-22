@@ -1,0 +1,84 @@
+/** enable the gutter for debugging**/
+$visual-grid: true !global;
+
+@import "./_bourbon.scss";
+@import "./bitters/_base.scss";
+@import "./_neat.scss";
+@import "./_neat-helpers.scss";
+
+
+body {
+  font-family: $helvetica;
+}
+
+#root {
+  @include outer-container();
+}
+
+.outer {
+  @include margin(null null 20px);
+  @include size(null 168px);
+  @include span-columns(8);
+  @include shift(4);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24);
+  @include display(flex);
+  @include flex-direction(column);
+  @include transition(all 0.2s ease-in);
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.24);
+  }
+
+  @include media($mobile,2) {
+    @include size(null 222px);
+    @include span-columns(2 of 2);
+  }
+}
+
+.body {
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  @include padding(20px);
+  @include size(null 61px);
+
+  .info {
+    color: #4A4A4A;
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+
+  .separator {
+    border-left: 1px solid rgba(151,151,151,0.23);
+
+    @include media($mobile) {
+      @include display(none);
+    }
+  }
+
+  @include media($mobile) {
+    @include size(null 119px);
+    @include flex-direction(column);
+  }
+}
+
+.header {
+  @include size(inherit 103px);
+  @include span-columns(4 of 4);
+  @include background(#A0EF4F);
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include padding(20px);
+  font-size: 1.5em;
+  font-weight: 500;
+
+  .status {
+    color: #426420;
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+}
+
+
