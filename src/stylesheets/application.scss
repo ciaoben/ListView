@@ -15,7 +15,7 @@ body {
   @include outer-container();
 }
 
-.outer {
+.card {
   @include margin(null null 20px);
   @include size(null 168px);
   @include span-columns(8);
@@ -71,8 +71,6 @@ body {
   @include flex-direction(column);
   @include justify-content(space-between);
   @include padding(20px);
-  font-size: 1.5em;
-  font-weight: 500;
 
   .status {
     color: #426420;
@@ -80,5 +78,3 @@ body {
     font-size: 0.875rem;
   }
 }
-
-
